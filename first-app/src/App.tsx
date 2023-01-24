@@ -1,6 +1,7 @@
 import "./App.css";
 import logo from "./logo.jpg";
 import logo2 from "./logo.svg";
+import {Form} from './Form';
 
 function App() {
   return (
@@ -77,6 +78,7 @@ function App() {
                 <div className="third-section-item">Company</div>
                 <div className="third-section-item">Contact</div>
               </div>
+              <Form/>
             </section>
           </main>
         </div>
