@@ -1,14 +1,16 @@
 import "./App.css";
+import logo from "./logo.jpg";
+import logo2 from "./logo.svg";
 
 function App() {
   return (
     <div className="App">
       {
         <div>
-          <header>
-            <img src="./React/first-app/src/logo.jpg" alt="neveikia" />
+          <header className="header">
+            <img className="logo" src={logo} />
+            <img className="logo2" src={logo2} />
           </header>
-
           <nav className="navigation-bar">
             <div className="used-container">Home</div>
             <div className="used-container">Product</div>
@@ -22,8 +24,8 @@ function App() {
               <div>Header image</div>
             </section>
             <section className="second-section">
-              <div>
-                <div>About</div>
+              <div className="second-section-container">
+                <div className="second-section-header">About</div>
                 <div className="text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
                   quisquam provident illum minus! Veritatis recusandae harum
@@ -31,8 +33,8 @@ function App() {
                   omnis totam nulla. Dolor, doloribus a. Totam.
                 </div>
               </div>
-              <div>
-                <div>Company</div>
+              <div className="second-section-container">
+                <div className="second-section-header">Company</div>
                 <div className="text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
                   earum deleniti soluta sit harum excepturi repellat qui
@@ -40,8 +42,8 @@ function App() {
                   laboriosam quidem, sint ex.
                 </div>
               </div>
-              <div>
-                <div>Services</div>
+              <div className="second-section-container">
+                <div className="second-section-header">Services</div>
                 <div className="text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Provident quas magni minus, fuga pariatur totam quaerat
@@ -53,14 +55,14 @@ function App() {
 
             <section className="third-section">
               <div className="first-container">
-                <div>Content</div>
+                <div className="third-section-header">Content</div>
                 <div>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
                   quidem deserunt quam earum culpa vel repellat temporibus neque
                   harum voluptatem praesentium delectus libero iusto asperiores
                   incidunt, pariatur veniam. Qui, ducimus?
                 </div>
-                <div>Sub header</div>
+                <div className="third-section-header">Sub header</div>
                 <div>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Corporis blanditiis numquam necessitatibus facilis deleniti
@@ -69,13 +71,11 @@ function App() {
                 </div>
               </div>
               <div className="second-container">
-                <div>Navigation</div>
-                <div>
-                  <div>Home</div>
-                  <div>Product</div>
-                  <div>Company</div>
-                  <div>Contact</div>
-                </div>
+                <div className="third-section-item">Navigation</div>
+                <div className="third-section-item">Home</div>
+                <div className="third-section-item">Product</div>
+                <div className="third-section-item">Company</div>
+                <div className="third-section-item">Contact</div>
               </div>
             </section>
           </main>

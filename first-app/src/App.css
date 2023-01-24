@@ -1,6 +1,6 @@
 .App {
-  background-color: rgb(228, 226, 226);
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -48,6 +48,8 @@
   color: white;
   align-content: center;
   margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   background-color: rgb(35, 73, 73);
 }
 
@@ -56,10 +58,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: auto;
   font-size: 30px;
   color: white;
   background-color: rgb(114, 182, 31);
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .second-section {
@@ -67,15 +71,25 @@
   column-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   font-size: 10px;
-  background-color: white;
+  background-color: rgb(35, 73, 73);
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  margin-top: 10px;
 }
 
 .text {
-  height: 100px;
+  height: 75px;
+  margin-top: 5px;
 }
 
 .third-section {
+  margin-top: 10px;
   display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgb(114, 182, 31);
+  color: white;
 }
 
 .first-container {
@@ -84,8 +98,57 @@
   text-align: left;
   padding-left: 5px;
   grid-template-rows: 0.1fr 0.5fr 0.1fr 0.5fr;
+  margin-left: 5px;
 }
 
 .second-container {
   width: 25%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  
+}
+
+.second-section-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.second-section-header {
+  font-size: 30px;
+}
+
+.third-section-header {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.third-section-item{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.third-section-item:nth-child(even){
+  color: rgb(35, 73, 73);
+}
+
+.logo{
+  height:35px;
+  width: 35px;
+}
+
+.header{
+  display: flex;
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+
+.logo2{
+  margin-left: 5px;
+  height:35px;
+  width: 35px;
 }
