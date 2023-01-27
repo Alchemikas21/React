@@ -1,0 +1,6 @@
+komponentu kurimas componenetss folderyje folderyje
+pirmame diziulis form, kitame tik button
+
+state setinimas yra pradinio lygio, nekartoti realiuose projektuose ir nenaudoti any tipo
+
+<> <> reacto vienas elementas vietoj div galima naudoti 
