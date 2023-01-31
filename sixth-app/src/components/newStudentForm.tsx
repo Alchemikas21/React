@@ -13,7 +13,7 @@ export const NewstudentForm = () => {
     e.preventDefault();
 
     axios
-      .post("/create-student", { name, lastName, studentAge })
+      .post("http://localhost:5001/create-student", { name, lastName, studentAge })
       .then((result) => console.log(result))
       .catch();
   };
