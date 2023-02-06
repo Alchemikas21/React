@@ -6,14 +6,19 @@ export const NewstudentForm = () => {
   const [name, setName] = useState("");
   const [lastName, setLastName] = useState("");
   const [studentAge, setStudentAge] = useState<null | number>(null);
+  const [identity, setIdentity] = useState<string[]>([]);
 
-  //axxxios fetchinimas?
-//backendas node exam main.js
-  const handleStudentSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
-    e.preventDefault();
+  const handleStudentSubmit: React.FormEventHandler<HTMLFormElement> = (
+    event
+  ) => {
+    event.preventDefault();
 
     axios
-      .post("http://localhost:5001/create-student", { name, lastName, studentAge })
+      .post("http://localhost:5001/create-student", {
+        name,
+        lastName,
+        studentAge,
+      })
       .then((result) => console.log(result))
       .catch();
   };

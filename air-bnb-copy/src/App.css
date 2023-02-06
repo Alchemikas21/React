@@ -1,0 +1,62 @@
+.page-header {
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 108px;
+  height: 35px;
+  position: relative;
+  left: 5%;
+}
+
+.first-section {
+  display: flex;
+  justify-content: center;
+}
+
+.first-section-image {
+padding-top: 5%;
+padding-bottom: 5%;
+width: 437px;
+height: 256px;
+}
+
+.second-section-header, .second-section-paragraph{
+  margin-left: 5%;
+}
+
+.second-section-header{
+  font-size: 36px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.second-section-paragraph{
+  width: 25%;
+  font-size: 16px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-info-container{
+  position: relative;
+}
+
+.card-tooltip{
+  position: absolute;
+  top: 0;
+  left: 15px;
+  background-color: white;
+  padding: 2px 5px 2px 5px;
+  border-radius: 5px;
+}
+
+.card-container{
+  display: flex;
+}
+
+.card-image{
+  width: 264px;
+  height: 353px;
+}
