@@ -1,3 +1,5 @@
+
+
 .page-header {
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
   height: 70px;
@@ -22,6 +24,7 @@ padding-top: 5%;
 padding-bottom: 5%;
 width: 437px;
 height: 256px;
+
 }
 
 .second-section-header, .second-section-paragraph{
@@ -39,24 +42,28 @@ height: 256px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.card-info-container{
+ .card-info-container{
   position: relative;
-}
+  
+} 
 
 .card-tooltip{
   position: absolute;
-  top: 0;
+  bottom: 430px;
   left: 15px;
-  background-color: white;
+  background-color:white;
   padding: 2px 5px 2px 5px;
   border-radius: 5px;
 }
 
 .card-container{
   display: flex;
+  justify-content: space-around;
 }
 
 .card-image{
   width: 264px;
   height: 353px;
+  border-radius: 20px;
 }
+

@@ -1,35 +1,47 @@
 import star from "./Star 1.png";
+import cover1 from "./image 12.png";
 
-export const Card = ({
-  image,
-  description,
-  price,
-  rating,
-  reviewCount,
-  country,
-  tooltipDescription,
-}: {
-  image: string;
-  description: string;
-  price: number;
-  rating: number;
-  reviewCount: string;
-  country: string;
-  tooltipDescription: string;
-}) => {
-  // alternative (props:any)
-  // props:image, props:header, props:p and so on
+// export const Card = ({
+//   image,
+//   description,
+//   price,
+//   stats,
+//   country,
+//   tooltipDescription,
+// }: {
+//   image: string;
+//   description: string;
+//   price: number;
+//   stats: any;
+//   country: string;
+//   tooltipDescription: number;
+// })  //propsu aprasymas pagal ju tipus
 
+export const Card = (props: any) => {
+  let tooltipText = "";
+
+  if (props.item.openSpots === 0) {
+    tooltipText = "SOLD OUT";
+  } else if (props.item.location === "Online") {
+    tooltipText = "ONLINE";
+  }
   return (
-    <figure className="card-info-container">
-      <img className="card-image" src={image} alt="card photo" />
+    <div className="card">
+      <img src={`../images/${props.item.coverImg}`} className="card-image" />
+      <div className="card--stats">
+        <img src="../images/star 1.png" className="card--star" />
+        <span>{props.item.stats.rating}</span>
+        <span className="gray">({props.item.stats.reviewCount}) • </span>
+        <span className="gray">{props.item.location}</span>
+      </div>
+      <p>{props.item.title}</p>
       <p>
-        <img src={star}></img>
-        {rating} {reviewCount} &#9900; {country}
+        <span className="bold">From ${props.item.price}</span> / person
       </p>
-      <p>{description}</p>
-      <p> From ${price} / person</p>
-      <p className="card-tooltip">{tooltipDescription}</p>
-    </figure>
+      <div className="card-info-container">
+
+         {tooltipText && <div className="card-tooltip">{tooltipText}</div>}
+      </div>
+    </div>
   );
 };

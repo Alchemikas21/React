@@ -19,7 +19,7 @@ export const NewstudentForm = () => {
         lastName,
         studentAge,
       })
-      .then((result) => console.log(result))
+
       .catch();
   };
 
