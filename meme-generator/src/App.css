@@ -39,3 +39,14 @@ input {
   margin-right: auto;
   margin-bottom: 20px;
 }
+
+.meme-image{
+  max-width: 100%;
+  height: 200px;
+}
+
+.image-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
