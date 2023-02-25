@@ -1,16 +1,18 @@
-import logo from "./React-icon.png";
+import React from "react";
 
-export const Header = () => {
+export const Header = (props: any) => {
   return (
-    <header>
-      <nav className="navigation-bar">
-        <img className="nav-bar-logo-image" src={logo} alt = "React-logo"/>
-        <ul className="list-of-links">
-        <li className="list-item">Pricing</li>
-        <li className="list-item">About</li>
-        <li className="list-item">Contact</li>
-        </ul>
-      </nav>
-    </header>
+    <nav className={props.darkMode ? "dark" : ""}>
+      {/* <img className="nav--logo_icon" src="./images/react-icon-small.png" /> */}
+      <h3 className="nav--logo_text">ReactFacts</h3>
+
+      <div className="toggler">
+        <p className="toggler--light">Light</p>
+        <div className="toggler--slider" onClick={props.toggleDarkMode}>
+          <div className="toggler--slider--circle"></div>
+        </div>
+        <p className="toggler--dark">Dark</p>
+      </div>
+    </nav>
   );
-};
+}
